@@ -14,7 +14,7 @@ Nagraliśmy odpowiedź wideo na wywiad wiceprezydenta Piotra Grzelaka w Radiu Gd
 
 Postanowiliśmy nagrać odpowiedź aby rozprawić się z półprawdami i kłamstwami prezydenta miasta. 
 
-{{< youtube kbpmvPrDVDA >}}
+{{< youtube id="kbpmvPrDVDA" >}}
 
 **Epilog**. 31 maja 2024 ostatliśmy z Dyrekcji Rozbudowy Miasta Gdańska ostatnią część dokumentacji o którą występowaliśmy. Jak bardzo prezydent Grzelak mija się z prawdą niech świadczy cytat z wiadomości jednego z urzędników, właśnie z 31 listopada. 
 > Powyższe materiały wyczerpują zakres żądania zawarty w Pańskim wniosku o udostępnienie informacji publicznej z dn. 14 kwietnia br.

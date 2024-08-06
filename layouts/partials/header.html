@@ -1,3 +1,13 @@
+{{ if (.HasShortcode "gallery") }}
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script> const style = document.createElement('link')
+    style.rel = 'stylesheet';
+    style.href = '{{ .Site.BaseURL }}css/gallery/glightbox.css';
+    document.head.append(style);
+	   
+	</script>
+{{ end }}
+
 {{- /* theme-toggle is enabled */}}
 {{- if (not site.Params.disableThemeToggle) }}
 {{- /* theme is light */}}
@@ -35,6 +45,9 @@ function menuToggle() {
   element.classList.toggle("is-active");
   element_menu.classList.toggle("show_menu");
   }
+  </script>
+  {{ if .IsHome }}
+  <script>
 var duration_cover = 4000;
 var duration_gallery = 2000;
 function cssToggle(bgArrr,elId) {
@@ -61,6 +74,7 @@ window.setInterval(cssToggle('eee', 'gallery'), 4000);
 window.setInterval(cssToggle('eee', 'cover-1'), 5000);
 });
 </script>
+{{ end }}
 <!-- end - solo_dev -->
 {{- /* theme-toggle is disabled and theme is auto */}}
 {{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
@@ -204,4 +218,5 @@ window.setInterval(cssToggle('eee', 'cover-1'), 5000);
 </div>
 
 {{ end }}
+
 

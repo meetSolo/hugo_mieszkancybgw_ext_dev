@@ -1,0 +1,20 @@
+<h2>{{$.Get "title"}}</h2>
+{{ $path_prefix := "content/galeria/" }} {{ $path_postfix := "/thumbs/" }} {{ $url := $.Get "path"}} {{ $path := (print
+$path_prefix $url $path_postfix) }}
+<ul class="gallery-page" id="{{ $.Get "path" }}">
+  {{ range (readDir $path) }}
+  <li>
+    <a href="/galeria/{{$url}}/full/{{ .Name }}" class="glightbox" data-gallery="gallery1">
+      <img src="/galeria/{{$url}}/thumbs/{{ .Name }}" loading="lazy" title="{{ .Name }}" alt="{{ .Name }}" />
+    </a>
+  </li>
+  {{ end }}
+
+</ul>
+
+<div class="read-more">
+  <center>
+    <button class="read-more" onclick="show_more_({{ $.Get "path" }})" title="Czytaj więcej">
+      <span id='span-{{ $.Get "path" }}'>Zobacz więcej</span></button>
+  </center>
+</div>
